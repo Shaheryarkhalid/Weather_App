@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="body-cla">
+        <section class="Main-Section">
+            <div class="Content-Wrapper">
+                <div class="Search-Bar">
+                    <form method="post" action="#" onsubmit="return Search_City_Country()">
+                        <input type="text" name="Search" id="Search">
+                        <button type="submit">
+                            <img src="./Realted_Media/search.png" alt="">
+                        </button>
+                    </form>
+                    <div id="Return_Data">
+
+                    </div>
+                </div>
+                <div class="Todays-Weather">
+                    <img id="Weather-Img" src="" alt="">
+                    <span class="Temperature"  id="temperature_2m">--°C</span>
+                    <span class="City-Country" id="City-Country">--</span>
+                    <div class="Other-Data">
+                        <div class="Humididty">
+                            <img src="./Realted_Media/humidity.png" alt="">
+                            <span id="relative_humidity_2m">%</span>
+                        </div>
+                        <div class="Wind-Speed">
+                            <img src="./Realted_Media/wind.png" alt="">
+                            <span id="wind_speed_10m">km/h</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="Next-Forcast">
+    
+                </div>
+            </div>
+        </section>          
+    </div>
+    <script src="./index.js">
+    </script>
+</body>
+</html>
